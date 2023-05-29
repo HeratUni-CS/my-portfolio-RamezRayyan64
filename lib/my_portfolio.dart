@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/widgets/my_list_tile.dart';
 
 class MyPortfolio extends StatefulWidget {
   const MyPortfolio({super.key});
@@ -42,6 +43,25 @@ class _MyPortfolioState extends State<MyPortfolio> {
                     color: Colors.tealAccent.shade100,
                     fontSize: 28,
                   ),
+                ),
+                const Divider(
+                  color: Colors.tealAccent,
+                ),
+                const MyListTile(
+                  icon: Icons.link,
+                  title: "Website",
+                ),
+                const MyListTile(
+                  icon: Icons.email,
+                  title: "Email",
+                ),
+                const MyListTile(
+                  icon: Icons.flutter_dash,
+                  title: "Twitter",
+                ),
+                const MyListTile(
+                  icon: Icons.facebook,
+                  title: "Facebook",
                 ),
               ],
             ),
