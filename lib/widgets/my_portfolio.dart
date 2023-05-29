@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyPortfolio extends StatefulWidget {
   const MyPortfolio({super.key});
@@ -22,7 +23,27 @@ class _MyPortfolioState extends State<MyPortfolio> {
                 color: Colors.teal,
                 borderRadius: BorderRadius.all(Radius.circular(15))),
             child: Column(
-              children: [],
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                const CircleAvatar(
+                  foregroundImage: AssetImage("assets/my_image.jpg"),
+                  radius: 75,
+                ),
+                Text(
+                  "Ramez A. Rayyan",
+                  style: GoogleFonts.pacifico(
+                    color: Colors.tealAccent.shade100,
+                    fontSize: 40,
+                  ),
+                ),
+                Text(
+                  "Flutter Developer",
+                  style: GoogleFonts.ubuntu(
+                    color: Colors.tealAccent.shade100,
+                    fontSize: 28,
+                  ),
+                ),
+              ],
             ),
           ),
         ),
